@@ -1,0 +1,28 @@
+# Unity minimal repository (allowlist style)
+# Ignore everything by default, then explicitly include required folders/files.
+*
+
+# Keep this file
+!.gitignore
+
+# Unity required project content
+!Assets/
+!Assets/**
+!Packages/
+!Packages/**
+!ProjectSettings/
+!ProjectSettings/**
+
+# Exclude generated/editor junk even inside included paths
+*.sln
+*.csproj
+**/.DS_Store
+**/Thumbs.db
+**/*.mp4
+**/*.mov
+**/*.webm
+**/*.avi
+**/*.m4v
+
+# Keep git internals excluded
+.git/
